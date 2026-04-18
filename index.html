@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pia das Facas | Facas Premium para Churrasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Cursor customizado -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-brand">
+      <span class="loader-text">PIA DAS FACAS</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-pia">PIA</span><span class="logo-das"> DAS </span><span class="logo-facas">FACAS</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link"><span>01</span> Início</a></li>
+          <li><a href="#facas" class="nav-link"><span>02</span> Facas</a></li>
+          <li><a href="#contato" class="nav-link"><span>03</span> Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/554896486913" target="_blank" class="header-cta">
+        <i class="fab fa-whatsapp"></i> Chamar
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="mobile-link">Início</a></li>
+        <li><a href="#facas" class="mobile-link">Facas</a></li>
+        <li><a href="#contato" class="mobile-link">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="ember" id="ember-canvas"></div>
+    </div>
+
+    <div class="hero-left">
+      <div class="hero-tag reveal-up">— Artesanal · Premium · Brasileiro</div>
+      <h1 class="hero-title reveal-up">
+        <span class="line">CORTE</span>
+        <span class="line italic">Perfeito.</span>
+        <span class="line">BRASA</span>
+        <span class="line italic">Certa.</span>
+      </h1>
+      <p class="hero-sub reveal-up">Facas para quem leva o churrasco a sério. Aço premium, design que impõe respeito na mesa e na brasa.</p>
+      <div class="hero-actions reveal-up">
+        <a href="https://wa.me/554896486913?text=Olá!%20Quero%20conhecer%20as%20facas%20premium" target="_blank" class="btn btn-primary magnetic">
+          <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+        <a href="https://instagram.com/ospiadasfacas" target="_blank" class="btn btn-ghost magnetic">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal-right">
+      <div class="hero-knife-frame">
+        <div class="knife-glow"></div>
+        <img src="./img/img_faca01.png" alt="Faca Premium Pia das Facas" class="hero-knife"/>
+        <div class="hero-badge">
+          <span class="badge-num">100%</span>
+          <span class="badge-text">Aço<br>Inox</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Clientes Felizes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="12">0</span><span class="stat-plus"> anos</span>
+        <span class="stat-label">de Tradição</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+        <span class="stat-label">Satisfação</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa animada -->
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span>CORTE IMPECÁVEL</span>
+      <span class="dot">✦</span>
+      <span>AÇO INOX PREMIUM</span>
+      <span class="dot">✦</span>
+      <span>DESIGN EXCLUSIVO</span>
+      <span class="dot">✦</span>
+      <span>ENTREGA BRASIL</span>
+      <span class="dot">✦</span>
+      <span>ARTESANAL</span>
+      <span class="dot">✦</span>
+      <span>CORTE IMPECÁVEL</span>
+      <span class="dot">✦</span>
+      <span>AÇO INOX PREMIUM</span>
+      <span class="dot">✦</span>
+      <span>DESIGN EXCLUSIVO</span>
+      <span class="dot">✦</span>
+      <span>ENTREGA BRASIL</span>
+      <span class="dot">✦</span>
+      <span>ARTESANAL</span>
+      <span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-container">
+      <div class="sobre-texto-col">
+        <div class="section-tag reveal-up">Nossa História</div>
+        <h2 class="section-title reveal-up">Nascemos da<br><em>paixão pelo</em><br>churrasco</h2>
+        <p class="sobre-p reveal-up">Cada faca é pensada para quem entende que um bom corte faz diferença no sabor, na apresentação e na experiência à mesa.</p>
+        <p class="sobre-p reveal-up">Do campo à churrasqueira, carregamos a história do trabalhador brasileiro — transformada em jóia de aço que honra o ritual do churrasco.</p>
+      </div>
+      <div class="sobre-valores-col">
+        <div class="valor-item reveal-up" data-delay="0">
+          <div class="valor-icon"><i class="fas fa-gem"></i></div>
+          <div class="valor-body">
+            <h3>Aço Inox Premium</h3>
+            <p>Alta retenção de fio e resistência total à corrosão. Faca que dura gerações.</p>
+          </div>
+        </div>
+        <div class="valor-item reveal-up" data-delay="100">
+          <div class="valor-icon"><i class="fas fa-drafting-compass"></i></div>
+          <div class="valor-body">
+            <h3>Design Exclusivo</h3>
+            <p>Equilíbrio perfeito entre estética artesanal e ergonomia de alto desempenho.</p>
+          </div>
+        </div>
+        <div class="valor-item reveal-up" data-delay="200">
+          <div class="valor-icon"><i class="fas fa-truck-fast"></i></div>
+          <div class="valor-body">
+            <h3>Entrega para todo Brasil</h3>
+            <p>Embalagem segura, envio rápido. Sua faca chega pronta para a festa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="produtos" id="facas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Coleção 2026</div>
+        <h2 class="section-title reveal-up">Nossas Facas<br><em>Premium</em></h2>
+        <p class="section-sub reveal-up">Cada peça é única. Cada corte, uma obra.</p>
+      </div>
+
+      <div class="produtos-grid">
+
+        <div class="produto-card reveal-up" data-delay="0">
+          <div class="produto-numero">01</div>
+          <div class="produto-imagem">
+            <img src="./img/img_faca01.png" alt="Faca Churrasco Master"/>
+            <div class="produto-overlay">
+              <a href="https://wa.me/554896486913?text=Quero%20a%20Faca%20Churrasco%20Master!" target="_blank" class="overlay-btn">
+                <i class="fab fa-whatsapp"></i> Pedir Agora
+              </a>
+            </div>
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Mais Vendida</div>
+            <h3>Faca Churrasco Master</h3>
+            <p class="descricao">Linda jóia em inox, perfeita para presentear e para usar com orgulho na brasa.</p>
+            <div class="produto-footer">
+              <span class="preco">R$ 389<sup>,00</sup></span>
+              <a href="https://wa.me/554896486913?text=Quero%20a%20Faca%20Churrasco%20Master!" target="_blank" class="produto-cta">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="produto-card reveal-up" data-delay="150">
+          <div class="produto-numero">02</div>
+          <div class="produto-imagem">
+            <img src="./img/img_faca02.png" alt="Faca Tradicional Black"/>
+            <div class="produto-overlay">
+              <a href="https://wa.me/554896486913?text=Quero%20a%20Faca%20Tradicional%20Black!" target="_blank" class="overlay-btn">
+                <i class="fab fa-whatsapp"></i> Pedir Agora
+              </a>
+            </div>
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Edição Especial</div>
+            <h3>Faca Tradicional Black</h3>
+            <p class="descricao">Forjada de disco de arado — carrega a história do agro brasileiro transformada em arte.</p>
+            <div class="produto-footer">
+              <span class="preco">R$ 319<sup>,00</sup></span>
+              <a href="https://wa.me/554896486913?text=Quero%20a%20Faca%20Tradicional%20Black!" target="_blank" class="produto-cta">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-tag reveal-up">Quem já tem</div>
+      <h2 class="section-title reveal-up">O que dizem<br><em>nossos clientes</em></h2>
+      <div class="depo-track" id="depoTrack">
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p>"Comprei para o meu pai de presente e ele ficou emocionado. A qualidade é impressionante, parece uma relíquia."</p>
+          <div class="depo-author"><strong>Carlos M.</strong> — São Paulo, SP</div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p>"Melhor faca que já usei no churrasco. O corte é perfeito e o peso na mão dá uma sensação premium incrível."</p>
+          <div class="depo-author"><strong>Ricardo F.</strong> — Florianópolis, SC</div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p>"A Tradicional Black é uma obra de arte. Todas as visitas do churrasco ficam querendo saber onde comprei."</p>
+          <div class="depo-author"><strong>André L.</strong> — Porto Alegre, RS</div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p>"Entrega super rápida, embalagem impecável. A faca chegou melhor do que esperava. Já indiquei pra galera toda."</p>
+          <div class="depo-author"><strong>Marcelo T.</strong> — Curitiba, PR</div>
+        </div>
+      </div>
+      <div class="depo-nav">
+        <button class="depo-btn" id="depoPrev"><i class="fas fa-arrow-left"></i></button>
+        <div class="depo-dots" id="depoDots"></div>
+        <button class="depo-btn" id="depoNext"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta" id="contato">
+    <div class="cta-bg">
+      <div class="cta-grain"></div>
+    </div>
+    <div class="container cta-container">
+      <div class="cta-content">
+        <div class="section-tag reveal-up">Hora de agir</div>
+        <h2 class="cta-title reveal-up">Leve sua<br><em>churrasqueira</em><br>para outro nível</h2>
+        <p class="reveal-up">Fale agora com a gente e garanta a sua com condições especiais. Estoque limitado.</p>
+        <div class="cta-actions reveal-up">
+          <a href="https://wa.me/554896486913?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20facas" target="_blank" class="btn btn-primary magnetic">
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+          <a href="https://instagram.com/ospiadasfacas" target="_blank" class="btn btn-ghost magnetic">
+            <i class="fab fa-instagram"></i> Ver no Instagram
+          </a>
+        </div>
+      </div>
+      <div class="cta-knife reveal-right">
+        <img src="./img/img_faca02.png" alt="Faca Black Premium"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">PIA DAS FACAS</div>
+        <p>Feito para quem leva o churrasco a sério.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/554896486913" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://instagram.com/ospiadasfacas" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+      <div class="footer-copy">© 2026 Pia das Facas</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
