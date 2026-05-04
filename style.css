@@ -322,9 +322,31 @@ body {
 /* Hero Right - Knife */
 .hero-right { position: relative; z-index: 1; display: flex; justify-content: center; }
 .hero-knife-frame {
-  position: relative;
   width: 100%;
   max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero-knife-shell {
+  position: relative;
+  width: 100%;
+  padding: 2.8rem;
+}
+.hero-knife-shell::before,
+.cta-knife::before {
+  content: '';
+  position: absolute;
+  inset: 1.2rem;
+  border-radius: inherit;
+  border: 1px solid rgba(201,168,76,0.34);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 0 32px rgba(201,168,76,0.14),
+    inset 0 0 24px rgba(201,168,76,0.06);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatKnife 4s ease-in-out infinite;
 }
 .knife-glow {
   position: absolute;
@@ -339,6 +361,8 @@ body {
 .hero-knife {
   width: 100%;
   max-width: 540px;
+  position: relative;
+  z-index: 1;
   filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8));
   animation: floatKnife 4s ease-in-out infinite;
   transform-origin: center;
@@ -348,15 +372,18 @@ body {
   50%       { transform: translateY(-18px) rotate(0deg); }
 }
 .hero-badge {
-  position: absolute;
-  bottom: 5%;
-  right: 0;
+  position: relative;
+  margin-top: 1.6rem;
   background: var(--surface);
   border: 1px solid rgba(201,168,76,0.3);
   padding: 1.4rem 1.8rem;
   border-radius: 1.2rem;
   text-align: center;
   backdrop-filter: blur(10px);
+  z-index: 2;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
 }
 .badge-num {
   display: block;
@@ -551,7 +578,9 @@ body {
   object-fit: cover; object-position: center;
   transition: transform 0.8s var(--ease-out);
 }
-.produto-card:hover .produto-imagem img { transform: scale(1.06); }
+.produto-card:hover .produto-imagem img {
+  transform: scale(1.06);
+}
 .produto-overlay {
   position: absolute; inset: 0;
   background: rgba(8,8,8,0.7);
@@ -697,9 +726,14 @@ body {
 .cta-actions { display: flex; gap: 1.4rem; flex-wrap: wrap; }
 .cta-knife {
   display: flex; justify-content: center;
+  position: relative;
+  padding: 2.8rem;
+  border-radius: 0;
 }
 .cta-knife img {
   max-width: 480px; width: 100%;
+  position: relative;
+  z-index: 1;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,0.7));
   animation: floatKnife 4s ease-in-out infinite;
 }
